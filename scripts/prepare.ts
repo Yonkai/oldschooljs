@@ -1,9 +1,6 @@
-import prepareNews from './prepareNews';
-import preparePolls from './preparePolls';
-import minifyDist from './minifyDist';
-import prepareItems from './prepareItems';
+import prepareItems from "./prepareItems";
+import "./enum";
+import { monstersWikiUpdate } from "./wiki";
 
-prepareNews();
-preparePolls();
-minifyDist();
 prepareItems();
+monstersWikiUpdate();

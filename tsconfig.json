@@ -1,14 +1,31 @@
 {
-	"extends": "eslint-config-bamboo",
+	"compileOnSave": true,
 	"compilerOptions": {
-		"strictNullChecks": false,
+		"allowSyntheticDefaultImports": true,
+		"alwaysStrict": true,
+		"incremental": true,
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"newLine": "lf",
+		"noFallthroughCasesInSwitch": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"pretty": true,
+		"resolveJsonModule": true,
+		"strict": true,
+		"useDefineForClassFields": true,
+		"types": ["node", "node-fetch"],
+		"skipDefaultLibCheck": true,
+		"strictNullChecks": true,
 		"sourceMap": true,
 		"declaration": true,
-		"removeComments": false,
+		"declarationMap": true,
+		"removeComments": true,
 		"outDir": "./dist",
-		"types": ["node"],
-		"target": "ES6",
-		"resolveJsonModule": true
+		"target": "ES2022",
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"lib": ["ES2023"]
 	},
-	"include": ["./src/**/*"]
+	"include": ["src/**/*"]
 }
